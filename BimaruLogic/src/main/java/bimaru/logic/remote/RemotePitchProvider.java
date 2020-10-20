@@ -77,7 +77,7 @@ public class RemotePitchProvider implements PitchProviderInterface, AutoCloseabl
         try {
             writer.write(ServerCommands.TOGGLE.toString());
             writer.newLine();
-            writer.write(index);
+            writer.write(String.valueOf(index));
             writer.newLine();
             writer.flush();
         } catch (IOException e) {

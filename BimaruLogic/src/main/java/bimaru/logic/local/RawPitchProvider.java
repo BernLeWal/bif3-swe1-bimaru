@@ -17,7 +17,7 @@ public class RawPitchProvider implements PitchProviderInterface, AutoCloseable {
 
     public String getNextPitchRaw() {
         return """
-                  123456\s
+                  123456
                  +------+
                 1|O    O|2
                 2|      |1
@@ -28,7 +28,7 @@ public class RawPitchProvider implements PitchProviderInterface, AutoCloseable {
                  +------+
                   212203
                 1x3, 2x2, 3x1
-                                
+                
                 """;
     }
 }

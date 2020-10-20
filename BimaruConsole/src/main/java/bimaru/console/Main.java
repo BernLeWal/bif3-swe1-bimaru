@@ -2,12 +2,16 @@ package bimaru.console;
 
 import bimaru.logic.PitchProviderInterface;
 import bimaru.logic.local.RawPitchProvider;
+import bimaru.logic.remote.RemotePitchProvider;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        PitchProviderInterface provider = new RawPitchProvider();
+        // use the corresponding line for demonstration
+//        PitchProviderInterface provider = new RawPitchProvider();     // local-call
+        PitchProviderInterface provider = new RemotePitchProvider();    // remote-call
+
         var pitch = provider.getNextPitch();
         Scanner sc = new Scanner(System.in);
 
