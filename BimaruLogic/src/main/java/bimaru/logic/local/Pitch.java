@@ -80,7 +80,7 @@ public class Pitch implements PitchInterface {
                             throw new IllegalArgumentException("invalid column constraints");
                         }
 
-                        this.columnConstraints[i] = Integer.parseInt(line.substring(2 + i, 1));
+                        this.columnConstraints[i] = Integer.parseInt(line.substring(2 + i, 2 + i + 1));
                     }
 
                     mode++;
